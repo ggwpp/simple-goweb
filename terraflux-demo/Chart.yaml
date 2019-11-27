@@ -1,0 +1,12 @@
+name: terraflux-demo
+version: 0.1.2
+appVersion: 0.1.0
+description: Simple web app by golang
+home: https://omise.co
+icon: https://cdn.omise.co/assets/dashboard/images/omise-logo.png
+sources:
+  - https://github.com/patipat/terraflux
+maintainers:
+  - name: Patipat Ponyanan
+    email: patipat@omise.co
+engine: gotpl
