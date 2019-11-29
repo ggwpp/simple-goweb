@@ -14,3 +14,4 @@ COPY --from=build /go/src/app/index.html .
 COPY --from=build /go/src/app/app .
 ENTRYPOINT ["/app/app"]
 EXPOSE 3000
+
