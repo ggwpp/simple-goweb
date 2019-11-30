@@ -16,4 +16,4 @@ jobs:
         ls -la
     - name: "Build Docker Image"
       run: |
-        docker build -t temp
+        docker build -t temp .
