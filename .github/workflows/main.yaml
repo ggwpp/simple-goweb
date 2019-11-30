@@ -6,7 +6,14 @@ jobs:
     runs-on: "ubuntu-latest"
     name: "A job to say hello"
     steps:
+    - name: "before"
+      run: |
+        ls -la
     - name: "Checkout"
-      uses: "actions/checkout@v1"
+      uses: "actions/checkout"
+    - name: "After"
+      run: |
+        ls -la
     - name: "Build Docker Image"
-      uses: "./.github/actions/docker-build"
+      uses: "docker build -t temp ."
+
