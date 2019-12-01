@@ -1,5 +1,8 @@
 name: "GithubAction"
-on: [push]
+on: 
+ push:
+ pull_request:
+    types: [opened, reopened]
 
 jobs:
   hello_world_job:
