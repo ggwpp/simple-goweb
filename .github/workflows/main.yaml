@@ -5,7 +5,7 @@ on:
     types: [opened, reopened]
 
 jobs:
-  hello_world_job:
+  build_and_test:
     runs-on: "ubuntu-latest"
     name: "Building Docker Image"
     steps:
@@ -14,3 +14,6 @@ jobs:
     - name: "Build Docker Image"
       run: |
         docker build -t temp .
+    - name: "Testing"
+      run: |
+        echo "Testing something. Should test inside docker"
