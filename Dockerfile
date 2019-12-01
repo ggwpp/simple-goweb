@@ -13,5 +13,4 @@ WORKDIR /app
 COPY --from=build /go/src/app/index.html .
 COPY --from=build /go/src/app/app .
 ENTRYPOINT ["/app/app"]
-EXPOSE 3000
-
+EXPOSE 6969
